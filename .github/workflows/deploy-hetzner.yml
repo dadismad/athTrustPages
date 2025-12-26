@@ -1,0 +1,27 @@
+name: Deploy SuperApp
+
+on:
+  push:
+    branches:
+      - 'main'
+
+env:
+  CONTAINER_NETWORK: workgroup-network
+  TARGET_WEB_PORTAL: https://ath.live
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Deploy application on remote server
+        uses: appleboy/ssh-action@v1.1.0
+        with:
+          host: ${{ secrets.SSH_PROD_HOST }}
+          username: ${{ secrets.SSH_PROD_USERNAME }}
+          key: ${{ secrets.SSH_HETZNER_KEY }}
+          script_stop: true
+          script: |
+            cd /var/app/ath-ui
+            ./rebuild-rerun.sh
+
+
