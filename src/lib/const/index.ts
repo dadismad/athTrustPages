@@ -1,0 +1,2 @@
+export const DEFAULT_PAGE_SIZE = 72;
+export const SHOW_ARTICLES_IN_CATEGORIES_FOR_LAST_DAYS = 30;

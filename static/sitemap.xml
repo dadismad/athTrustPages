@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Главная страница -->
+  <url>
+    <loc>https://ath.live/</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Категории -->
+  <url>
+    <loc>https://ath.live/categories/bitcoin_and_eth</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ath.live/categories/web3</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ath.live/categories/digital_nomad</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ath.live/categories/work_and_travel</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ath.live/categories/cex_and_dex</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ath.live/categories/ton_and_gamefi</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ath.live/categories/Memecoins</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Статьи -->
+  <url>
+    <loc>https://ath.live/article/opensea-expands-to-22-blockchains</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ath.live/article/circle-mints-500m-usdc-on-solana</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

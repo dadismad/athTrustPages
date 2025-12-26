@@ -1,0 +1,49 @@
+name: Deploy SuperApp
+
+on:
+  push:
+    branches:
+      - 'main'
+
+env:
+  CONTAINER_NETWORK: workgroup-network
+  TARGET_WEB_PORTAL: https://ath.live
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Deploy application on remote server
+        uses: appleboy/ssh-action@v1.1.0
+        with:
+          host: ${{ secrets.SSH_PROD_HOST }}
+          username: ${{ secrets.SSH_PROD_USERNAME }}
+          key: ${{ secrets.SSH_HETZNER_KEY }}
+          script_stop: true
+          script: |
+            cd /var/app/ath-ui
+            ./rebuild-rerun.sh
+
+      - name: The deploy has failed
+        if: ${{ failure() }}
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          format: html
+          disable_web_page_preview: true
+          message: |
+            🔴🔴 <a href="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}">${{ github.repository }}</a> deploy error 
+
+      - name: Good job!
+        if: ${{ success() }}
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          format: html
+          disable_web_page_preview: true
+          message: |
+            🟢 <a href="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}">${{ github.repository }}</a> has been build and deployed on <b>PROD</b> successfully
+
+            ${{ env.TARGET_WEB_PORTAL }}

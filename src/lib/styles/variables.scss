@@ -1,0 +1,63 @@
+// @import "~bootstrap/scss/mixins/banner";
+// @include bsBanner("");
+
+// scss-docs-start import-stack
+// Configuration
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/variables-dark";
+@import "node_modules/bootstrap/scss/maps";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+
+$h1-font-size: $font-size-base * 4;
+$h2-font-size: $font-size-base * 3;
+$h3-font-size: $font-size-base * 2;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$grid-columns: 24;
+$grid-gutter-width: 2rem;
+$container-padding-x: $grid-gutter-width;
+//$grid-row-columns: 6;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5,
+  7: $spacer * 8,
+  8: $spacer * 10,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 880px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px // 1320
+);
+
+$zindex-dropdown:                   1000;
+$zindex-sticky:                     1020;
+$zindex-fixed:                      1030;
+$zindex-offcanvas-backdrop:         1040;
+$zindex-offcanvas:                  1045;
+$zindex-modal-backdrop:             1050;
+$zindex-modal:                      1055;
+$zindex-popover:                    1070;
+$zindex-tooltip:                    1080;
+$zindex-toast:                      1090;

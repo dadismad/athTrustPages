@@ -1,0 +1,43 @@
+.playfair {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:bold;
+  font-style: normal;
+}
+
+.funnel {
+  font-family: "Funnel Display", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+a, a:link, a:visited {
+  color: var(--color-text-base-100);
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.markdown-wrapper {
+  a, a:link, a:visited {
+    color: var(--color-text-link-100);
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
