@@ -404,14 +404,6 @@
 		font-size: 18px;
 	}
 
-	h4 {
-		font-size: 16px;
-	}
-
-	h5 {
-		font-size: 15px;
-	}
-
 	p {
 		font-family: 'Futura', sans-serif;
 		font-size: 14px;
@@ -420,7 +412,7 @@
 		margin-bottom: 12px;
 	}
 
-	ul, ol {
+	ul {
 		font-family: 'Futura', sans-serif;
 		font-size: 14px;
 		line-height: 20px;
@@ -469,11 +461,6 @@
 		font-weight: 700;
 		color: #856404;
 		margin-bottom: 10px;
-	}
-
-	.section-divider {
-		border-bottom: 2px solid #f0f7f3;
-		margin: 30px 0;
 	}
 
 	/* Responsive */
