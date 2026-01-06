@@ -140,6 +140,12 @@
 				<div class="navigator-link">
 					<Link href={`${host}/events`}>Events</Link>
 				</div>
+				<div class="navigator-link">
+					<Link href={`${host}/about-us`}>About Us</Link>
+				</div>
+				<div class="navigator-link">
+					<Link href={`${host}/contact-us`}>Contact Us</Link>
+				</div>
 
 			</div>
 		</div>
